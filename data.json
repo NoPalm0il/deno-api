@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "message": "wash dishes",
+      "done": false,
+      "created": 1640382307598
+    },
+    {
+      "id": 2,
+      "message": "start learning deno",
+      "done": true,
+      "created": 1640382308598
+    },
+    {
+      "id": 3,
+      "message": "make a game",
+      "done": false,
+      "created": 1640382309598
+    },
+    {
+      "id": 4,
+      "message": "buy a caterham",
+      "done": false,
+      "created": 1640382310598
+    }
+  ]
+}

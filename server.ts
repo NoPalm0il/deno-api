@@ -2,7 +2,7 @@ import "https://deno.land/x/dotenv/load.ts";
 import { Application } from "https://deno.land/x/oak/mod.ts";
 import router from "./routes.ts";
 
-const port = parseInt(Deno.env.get("PORT") || "8080");
+const port = Deno.env.get("PORT") || "8000";
 
 const app = new Application();
 
@@ -18,4 +18,4 @@ app.addEventListener("listen", ({ hostname, port, secure }) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-await app.listen({ port });
+await app.listen({ port: +port });
